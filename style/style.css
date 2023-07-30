@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Segoe UI", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    font-weight: 550;
+    color: black;
+}
+/*header*/
+.barNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 4px 16px;
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+.menu li a{
+    font-weight: 550;
+    color: white;
+}
+
+/* mine */
+.forma{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url(./img/f.jpg) center;
+    height: 100vh;
+}
+.l{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.646), rgba(255, 255, 255, 0.811));
+}
+#formulario{
+    display: none;
+    background-color: white; 
+    border-radius: 8px; 
+    border: 1px solid black;
+    padding: 40px;
+    position: relative;
+}
+.inp{
+    padding: 8px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-size: 16px;
+    width: 100%;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn{
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 16px;
+    
+}
+.nombreUsuarios{
+    font-size: 12px;
+}
+/* extra */
+p{
+    margin: auto 50px;
+}
+.in{
+    margin: -100px 50px 0;
+}
+.ind{
+    display: none;
+    margin: -100px 50px 0;
+}
+.soc{
+    display: none;
+    margin: -100px 50px 0;
+}
+
+/*Pagina de Accesos*/
+.container{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: -100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.title h1{
+    text-align: center;
+    border-bottom: 1px black solid;
+    padding: 10px 0;
+}
+
+.barNavAcces{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 4px 16px;
+    height: 80px;
+    color: white;
+    border-bottom: 1px black solid;
+}
+
+.menuAcces{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+.barNavAcces li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+    list-style: none;
+}
+
+.cuentaUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+}
+.cuentaUser p{
+    padding: 30px;
+    margin: 0 50px;
+}
+#ingr{
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 8px;
+       
+}
+#ret{
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 8px;
+}
+
+/* extra */
+.saldo{
+    display: none;
+}
+.ingresar{
+    display: none;
+}
+.retirar{
+    display: none;
+}
+.cerrar{
+    display: none;
+}

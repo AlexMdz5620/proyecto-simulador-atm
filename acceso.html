@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es en">
+<head>
+    <title>FrikBank</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style/style.css">
+
+    <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+    <nav class="barNav">
+        <h1>Bienvenido a tu Cuenta</h1>
+    </nav>
+    <main>
+        <section class="forma">
+            <div class="l">
+                <div class="l-acceso">
+                    <div class="container">
+                        <div class="title">
+                            <h1>Selecciona una de las siguientes opciones</h1>
+                        </div>
+                        <nav class="barNavAcces"> 
+                            <ul class="menuAcces">
+                                <li>
+                                    <a href="#" id="consulSaldo">Consultar Saldo</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="ingMon">Ingresar Monto</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="retMont">Retirar Monto</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="cerrar">Cerrar Sesión</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="saldo">
+                            <div class="cuentaUser">
+                                <p>Tu saldo acutual es de:</p>
+                                <p id="saldoActual"></p>
+                            </div>
+                        </div>
+                        <div class="ingresar">
+                            <div class="cuentaUser"> 
+                                <p>Indica cuanto es la cantidad que desea Ingresar a su cuenta</p>
+                                <form id="formIngr">
+                                    <input type="number" name="cantidadIngresar" id="ingr">
+                                    <input type="button" value="Añadir a su Cuenta" class="btn">
+                                </form>
+                                <p id="montoIngresado">Monto a ingresar: </p>
+                                <p class="saldoActualIgr">Saldo actual: </p>
+                            </div>
+                        </div>
+                        <div class="retirar">
+                            <div class="cuentaUser"> 
+                                <p>Indica cuanto es la cantidad que desea Retirar su cuenta</p>
+                                <form id="formRetir">
+                                    <input type="number" name="cantidadRetirar" id="ret">
+                                    <input type="button" value="Retirar de su Cuenta" class="btn">
+                                </form>
+                                <p id="montoRetirado">Monto a retirar: </p>
+                                <p class="saldoActualRet">Saldo actual: </p>
+                            </div>
+                        </div>
+                        <div class="cerrar">
+                            <div class="cuentaUser">
+                                <p>¿Seguro que desea salir de su cuenta?</p>
+                                <form action="">
+                                    <input type="button" value="Si" class="btn">
+                                    <input type="button" value="No" id="reset" class="btn">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="r">
+            </div>
+        </section>
+    </main>
+
+    <script src="./src/app.js"></script>
+    <script src="./src/acceso.js"></script>
+    <script src="./src/db.js"></script>
+</body>
+</html>
