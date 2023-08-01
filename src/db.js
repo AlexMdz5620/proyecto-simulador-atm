@@ -6,12 +6,12 @@ const users=[
     },
     {
         name: 'Gera',
-        password: 1234,
+        password: 2345,
         saldo: 290,
     },
     {
         name: 'Karla',
-        password: 1234,
+        password: 3456,
         saldo: 60,
     },
   ];

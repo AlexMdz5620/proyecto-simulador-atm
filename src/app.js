@@ -13,28 +13,28 @@ inicio.addEventListener('click', () =>{
   parr2.style.display= 'none';
   parr3.style.display= 'none';
   formu.style.display= 'none';
-})
+});
 
 individuo.addEventListener('click', () =>{
   parr.style.display= 'none';
   parr2.style.display= 'initial';
   parr3.style.display= 'none';
   formu.style.display= 'none';
-})
+});
 
 sociedad.addEventListener('click', () =>{
   parr.style.display= 'none';
   parr2.style.display= 'none';
   parr3.style.display= 'initial';
   formu.style.display= 'none';
-})
+});
 
 acceso.addEventListener('click', () =>{    
   parr.style.display= 'none';
   parr2.style.display= 'none';
   parr3.style.display= 'none';
   formu.style.display= 'initial';
-})
+});
 
 //Formulario de Acceso a la cuenta
 

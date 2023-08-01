@@ -3,6 +3,19 @@
 const user= window.localStorage.getItem('user');
 const userConvert= user ? JSON.parse(user) :'';
 
+console.log(user);
+
+//colocar el saldo actual de la cuenta en la pantalla
+const saldoActual= function salAct(){
+users.forEach(u=>{
+    if (user == users.name) {
+      saldoActual=users.saldo;
+    }});
+  };
+  console.log(saldoActual());
+/*  document.getElementById("saldoActual").innerText = saldoActual; */
+
+
 //Cambio de Paginas en el Acceso
 const saldo=document.querySelector('#consulSaldo');
 const ingresar=document.querySelector('#ingMon');
@@ -17,7 +30,8 @@ saldo.addEventListener('click', () =>{
     sal.style.display= 'initial';
     ing.style.display= 'none';
     ret.style.display= 'none';
-    exit.style.display= 'none';    
+    exit.style.display= 'none';
+    document.getElementById("saldoActual").innerText = saldoActual();     
   });
   
 ingresar.addEventListener('click', () =>{
@@ -47,19 +61,8 @@ reset.addEventListener('click', () =>{
     ing.style.display= 'none';
     ret.style.display= 'none';
     exit.style.display= 'none';
-    });
+  });
 // Formulas para los datos del usuario
-
-//colocar el saldo actual de la cuenta en la pantalla
-  var saldoActual= 0
-
-    users.forEach(u=>{
-    if (u.name == userConvert) {
-      saldoActual=u.saldo;
-    }
-    });
-  
- document.getElementById("saldoActual").innerText = saldoActual;
  
 //Ingresar y Retirar saldo de la cuenta
 
@@ -71,9 +74,10 @@ formularioIngreso.addEventListener('submit', function ingreso(event){
   event.preventDefault();
 
   const ingresarSaldo= event.target.cantidadIngresar.value;
-  saldoIngreso= ingresarSaldo+saldoActual 
+  saldoIngreso= ingresarSaldo+saldoActual;
+
   if (saldoIngreso<990) {
-      
+    document.querySelector(".saldoActualIgr").innerText = saldoIngreso;
      
   } else{
       alert('Solo se puede ingresar hasta un máximo de $990')
