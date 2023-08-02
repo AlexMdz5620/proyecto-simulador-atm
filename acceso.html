@@ -33,9 +33,6 @@
                                 <li>
                                     <a href="#" id="retMont">Retirar Monto</a>
                                 </li>
-                                <li>
-                                    <a href="#" id="cerrar">Cerrar Sesión</a>
-                                </li>
                             </ul>
                         </nav>
                         <div class="saldo">
@@ -51,7 +48,8 @@
                                     <input type="number" name="cantidadIngresar" id="ingr">
                                     <input type="button" value="Añadir a su Cuenta" class="btn">
                                 </form>
-                                <p class="saldoActualIgr">Saldo actual: </p>
+                                <p>Saldo actual: </p>
+                                <p id="saldoActualIgr"></p>
                             </div>
                         </div>
                         <div class="retirar">
@@ -61,16 +59,8 @@
                                     <input type="number" name="cantidadRetirar" id="ret">
                                     <input type="button" value="Retirar de su Cuenta" class="btn">
                                 </form>
-                                <p class="saldoActualRet">Saldo actual: </p>
-                            </div>
-                        </div>
-                        <div class="cerrar">
-                            <div class="cuentaUser">
-                                <p>¿Seguro que desea salir de su cuenta?</p>
-                                <form action="">
-                                    <input type="button" value="Si" class="btn">
-                                    <input type="button" value="No" id="reset" class="btn">
-                                </form>
+                                <p>Saldo actual: </p>
+                                <p id="saldoActualRet"></p>
                             </div>
                         </div>
                     </div>
